@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Bell"
+        android:icon="@drawable/bell"
+        android:id="@+id/item_bell"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/add"
+        android:id="@+id/item_add"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="clock"
+        android:icon="@drawable/clock"
+        android:id="@+id/item_clock"
+        app:showAsAction="always"/>
+</menu>

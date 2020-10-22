@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SliderActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="11"
+            app:floatingLabel="true"
+            app:labelColor="#000000"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:valueFrom="100"
+            android:valueTo="1000" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:valueFrom="-5"
+            android:valueTo="5" />
+
+        <com.google.android.material.slider.Slider
+            android:layout_marginTop="30dp"
+            android:id="@+id/slider_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="11"
+            android:stepSize="1" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:valueFrom="100"
+            android:valueTo="1000"
+            android:stepSize="100" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:valueFrom="-5"
+            android:valueTo="5"
+            android:stepSize="1" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:valueFrom="500"
+            android:valueTo="50000"
+            android:stepSize="500" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="5.75"
+            android:stepSize="0.25" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

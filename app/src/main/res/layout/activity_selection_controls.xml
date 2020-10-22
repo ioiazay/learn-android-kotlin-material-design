@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectionControlsActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox"
+            app:useMaterialThemeColors="true"
+            app:buttonTint="@color/colorAccent"
+            android:text="Item 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"/>
+
+        <RadioGroup
+            android:checkedButton="@id/radio_button_1"
+            android:id="@+id/radio_group"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/radio_button_1"
+                app:useMaterialThemeColors="true"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:text="Item 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/radio_button_2"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:text="Item 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_widget"
+            android:text="Pink   "
+            app:track="@drawable/selector_switch_track_drawable"
+            android:thumb="@drawable/selector_switch_thumb_drawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

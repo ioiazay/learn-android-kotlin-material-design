@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_text"
+                app:icon="@drawable/add"
+                android:text="Text Button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_outlined"
+                android:layout_marginTop="20dp"
+                android:text="Outlined Button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_outlined_icon"
+                app:icon="@drawable/clock"
+                android:layout_marginTop="20dp"
+                android:text="Outlined Button Icon"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_contained"
+                android:layout_marginTop="20dp"
+                android:text="Contained Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_contained_icon"
+                app:icon="@drawable/bell"
+                android:layout_marginTop="20dp"
+                android:text="Contained Button Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_unelevated"
+                android:layout_marginTop="20dp"
+                android:text="Unelevated Button"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                app:checkedButton="@+id/button_1"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                android:id="@+id/toggle_button"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    app:backgroundTint="@color/selector_toggle_button_color"
+                    android:textColor="@color/selector_toogle_button_text_color"
+                    android:id="@+id/button_1"
+                    android:text="Button 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.button.MaterialButton
+                    app:backgroundTint="@color/selector_toggle_button_color"
+                    android:textColor="@color/selector_toogle_button_text_color"
+                    android:id="@+id/button_2"
+                    android:text="Button 2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.button.MaterialButton
+                    app:backgroundTint="@color/selector_toggle_button_color"
+                    android:textColor="@color/selector_toogle_button_text_color"
+                    android:id="@+id/button_3"
+                    android:text="Button 3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggle_button_outlined_icon_only"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                    app:icon="@drawable/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                    app:icon="@drawable/bell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                    app:icon="@drawable/clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggle_button_icon_only"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.App.Button.IconOnly"
+                    app:icon="@drawable/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.App.Button.IconOnly"
+                    app:icon="@drawable/bell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.App.Button.IconOnly"
+                    app:icon="@drawable/clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:button="@drawable/selector_material_checkbox_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChipsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_action"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_marginTop="16dp"
+                app:chipIcon="@drawable/bell"
+                android:text="Chips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_entry"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_marginTop="16dp"
+                android:text="Chip Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_filter"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_marginTop="16dp"
+                android:text="Chip Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_single"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                app:singleSelection="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_choice_single_1"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_marginTop="16dp"
+                    android:text="Chip Choice Single 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_choice_single_2"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_marginTop="16dp"
+                    android:text="Chip Choice Single 2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_multiple"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                app:singleSelection="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_choice_multiple_1"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_marginTop="16dp"
+                    android:text="Chip Choice Multiple 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_choice_multiple_2"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_marginTop="16dp"
+                    android:text="Chip Choice Multiple 2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_choice_multiple_3"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_marginTop="16dp"
+                    android:text="Chip Choice Multiple 3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

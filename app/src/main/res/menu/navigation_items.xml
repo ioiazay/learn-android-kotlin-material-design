@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="Menu Bell"
+            android:icon="@drawable/bell"
+            android:id="@+id/item_bell"/>
+
+        <item
+            android:title="Menu Clock"
+            android:icon="@drawable/clock"
+            android:id="@+id/item_clock"/>
+
+        <item
+            android:title="Menu Add"
+            android:icon="@drawable/add"
+            android:id="@+id/item_add"/>
+
+    </group>
+
+    <item android:title="Menu Baru">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:title="Menu Bell Menu"
+                    android:icon="@drawable/bell"
+                    android:id="@+id/item_bell_menu"/>
+
+                <item
+                    android:title="Menu Clock Menu"
+                    android:icon="@drawable/clock"
+                    android:id="@+id/item_clock_menu"/>
+
+                <item
+                    android:title="Menu Add Menu"
+                    android:icon="@drawable/add"
+                    android:id="@+id/item_add_menu"/>
+
+            </group>
+
+        </menu>
+    </item>
+
+</menu>
